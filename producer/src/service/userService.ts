@@ -17,7 +17,7 @@ export const create = async () => {
     const address: Address = { ...userData.address, user_id: userData.id };
     const employment: Employment = { ...userData.employment, user_id: userData.id };
     const creditCard: CreditCard = { ...userData.creditCard, user_id: userData.id };
-    console.log(subscription.status)
+
     await createUser(userData);
     const promiseList = [
         createAddress(address),

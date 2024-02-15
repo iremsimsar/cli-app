@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 db.sequelize.sync({ force: true }).then(() => {
-    console.log('create table sync { force: false }');
+    console.log('create table sync { force: true }');
 });
 
 cron.schedule('* * * * * *', () => {

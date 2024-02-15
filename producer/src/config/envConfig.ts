@@ -8,7 +8,6 @@ export default {
     },
 
     get userApiBaseUri() {
-        console.log(process.env.USER_API_BASE_URI);
         return process.env.USER_API_BASE_URI;
     },
 
