@@ -34,7 +34,7 @@ export default {
     },
 
     get dbHost() {
-        return "db2"
+        return process.env.DB_HOST;
     },
 
     get dbDialect() {
